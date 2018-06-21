@@ -1,0 +1,33 @@
+{% extends 'bootstrap/base.html' %}
+{# from 'bootstrap/wtf.html' import form_field,form_errors #}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block title %}
+Flask-Bootstrap | Login Page
+{% endblock %}
+
+{% block content %}
+
+<div class="container"> 
+    <!-- Shorthand -->
+    
+    {{ wtf.quick_form(form) }}
+
+    <!-- <form class="form form-horizontal" method="post" role="form"> -->
+    {# form.hidden_tag() #}
+    {# wtf.form_errors(form, hiddens="only") #}
+    {# wtf.form_field(form.username) #}
+    {# wtf.form_field(form.password) #}
+    {# wtf.form_field(form.remember_me) #}
+    {# wtf.form_field(form.submit) #}
+<!-- </form> -->
+    
+</div>
+
+
+
+{%- block footer %}
+<footer>&copy; 2016 Awesome, Inc.</footer>
+{%- endblock footer %}
+
+{% endblock %}
